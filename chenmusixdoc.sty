@@ -21,15 +21,30 @@
 %   Boston, MA 02111-1307, USA.
 %
 %
-\usepackage{CJKutf8}
-\usepackage[papersize={210mm,11in},margin=1.125in]{geometry} % a4 width, letter-paper height
+\RequirePackage{CJKutf8}
+\RequirePackage[papersize={210mm,11in},margin=1.125in]{geometry} % a4 width, letter-paper height
 \pagestyle{headings}
-\usepackage{makeidx}
-\usepackage{multicol}
-\usepackage{etex}
-\usepackage{amssymb}
-\usepackage{xcolor}
-\usepackage{CJKutf8}
+\RequirePackage{makeidx}
+\RequirePackage{multicol}
+\RequirePackage{etex}
+\RequirePackage{amssymb}
+\RequirePackage{xcolor}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter quote at the start of chapter        %
+% Source: http://tex.stackexchange.com/a/53380 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\makeatletter
+\renewcommand{\@chapapp}{}% Not necessary...
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+%\makeatother
+
 
 \newcommand{\myurl}[1]{\textcolor{blue}{\underline{\textcolor{black}{\url{#1}}}}}
 \newcommand{\musixflxVersion}{0.83.3}
@@ -45,23 +60,23 @@
 #1
 \end{CJK}}
 \newcommand\Red{\color{red}}
-%\usepackage{indentfirst}
+%\RequirePackage{indentfirst}
 
-\usepackage{mflogo}
+\RequirePackage{mflogo}
 
-%\usepackage[ansinew]{inputenc}
+%\RequirePackage[ansinew]{inputenc}
 
 %  default is Computer Modern OT1 encoding
-\usepackage[T1]{fontenc}     % for CM, \input musixec after musixtex
-\usepackage[osf]{mathpazo}  % Palatino text, with old-style figures; use $n$ for lining figures
-%\usepackage{mathptmx}  % Times text
-%\usepackage{helvet}\renewcommand{\familydefault}{\sfdefault}     % Helvetica text
+\RequirePackage[T1]{fontenc}     % for CM, \input musixec after musixtex
+\RequirePackage[osf]{mathpazo}  % Palatino text, with old-style figures; use $n$ for lining figures
+%\RequirePackage{mathptmx}  % Times text
+%\RequirePackage{helvet}\renewcommand{\familydefault}{\sfdefault}     % Helvetica text
 
 % use OT1 encoding for tt to avoid need for cm-super fonts
 \renewcommand{\ttfamily}{\fontencoding{OT1}\fontfamily{cmtt}\selectfont}
 
 
-\usepackage{textcomp}
+\RequirePackage{textcomp}
 
 \input musixtex
 \input musixbm
@@ -81,7 +96,7 @@
 %\input musixtmr  %  Times text in music
 %\input musixhv   %  Helvetica text in music
 
-\usepackage{paralist}
+\RequirePackage{paralist}
 \setlength{\pltopsep}{1pt plus 2pt minus 1pt}
 \setlength{\plitemsep}{4.5pt plus 2pt minus 1pt}
 \renewenvironment{enumerate}{\begin{compactenum}}{\end{compactenum}}
@@ -92,13 +107,13 @@
 \setcounter{secnumdepth}{2}
 
 % more place for section numbers in \tableofcontents
-\usepackage{tocloft}
+\RequirePackage{tocloft}
 \setlength{\cftsecnumwidth}{3.0em}
 
 \renewcommand{\chaptermark}[1]{\markboth{\itshape Chapter \thechapter. #1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\itshape\thesection. #1}}
 
-\usepackage[colorlinks=true]{hyperref}
+\RequirePackage[colorlinks=true]{hyperref}
 
 \nobarnumbers
 
@@ -162,5 +177,7 @@
 \def\_{\protect\underscoreSymbol}
 
 \endinput
+
+
 
 

@@ -1,0 +1,491 @@
+\chapter{Guitar}\index{guitar}
+
+%\begin{chapquote}{Proverbs 4:7, \textit{ASV Bible}}
+%``Wisdom is supreme. Get wisdom. Yes, though it costs all your possessions, get understanding.''
+%\end{chapquote}
+
+\begin{chapquote}{Psalms 37:3-4 \textit{ESV2011}}
+\begin{center}
+  Trust in the Lord, and do good;\\
+dwell in the land and befriend faithfulness.\\
+ Delight yourself in the Lord,\\
+and he will give you the desires of your heart.
+\end{center}
+\end{chapquote}
+
+
+
+\section{Lyrics Test}
+
+Test for the reference.\cite{Chen1984}
+\begin{music}
+\input musixlyr
+% \transpose= 8% Logical Transposition
+% \generalsignature{2}
+\ninerm
+\parindent9mm
+\braceheight5.4\Interligne\relax
+\rightline{Arr.: A.~B.~Musician}
+\instrumentnumber2
+\generalsignature{0}
+\generalmeter{\meterfrac44}
+\setclef1\bass
+\relativeaccid
+\setinterinstrument1{3\Interligne}
+\songtop2
+\songbottom1
+\setname2{\vbox{\hsize\parindent\centerline{Sop}\centerline{Alt}}}
+\setname1{\vbox{\hsize\parindent\centerline{Ten}\centerline{Bass}}}
+\sepbarrules\nobarnumbers
+\beforeruleskip-2pt
+\setlyrics{amen1}
+	{\llabel{amenlabel}A-men!} \assignlyrics1{amen1}
+\copylyrics{amen1}{amen2}	\assignlyrics2{amen2}
+\startpiece
+\NOtes% lower staff:
+	\itenu0K\beginmel\wh K\sk\sk\sk
+	\midslur2\tten0\endmel\hlp K&%
+% upper staff:
+	\qa f\lyrnop\lyrpt,\qa g%
+	\golyr{amenlabel}\lclyr\qa h\lyrnop\lyrpt,\qa{_i}%
+	\golyr{amenlabel}\lclyr\beginmel\islurd1h\qa{hg}%
+	\tslur1f\endmel\qa f\en
+\NOTEs\wh N&\wh g\en
+%\mulooseness=-2 % In this case, I could't set above 1
+\endpiece
+\end{music}
+
+
+\section{Classical Guitar}
+\subsection{C major 恭逢婚礼}
+
+\medskip\medskip
+%\oneversespace
+
+\begin{music}
+\input musixlyr
+\input musixgui
+%\input chenguitar
+\rightline{Arr.: Steven~Law YouTube}
+ \resetlyrics \small
+\lyrmodealter0
+ %\setlyrics{soprano}{今 日 聚 集， 大 家 欢 喜， 照 主 圣 旨 公 行 婚 礼， } \auxlyr{\assignlyrics1{soprano}}
+ %\copylyrics{soprano}{alto}                       \assignlyrics1{alto}
+
+ \generalsignature{0}
+ \advance\stafftopmarg1\Interligne
+ \advance\staffbotmarg2\Interligne
+
+ \startpiece\addspace\afterruleskip
+  \Notes\zqu g\Uptext{C} \zcharnote{-14}{今日聚集}\zhl {ec} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \notes\zqp {eg}\ibu0j0\qbp0j\en    %\loffset{.3}{\fl g} is a flat  % pitch is three staff spaces below the bottom of the heavy connecting bar, in many cases should be set as the first note.
+  \notes\roff{\zq {eg}\tbbu0\tqh0j}\en      % {\ibu \ztqh} equiv. to  {\ibl \ztqb } 
+  \bar
+  \Notes\zhu j\zhl {ceg}\en
+  \bar % bar2
+  \Notes\zqu g\Uptext{G$^7$}\zhl {Nd}\en
+  \notes\zqp {dg}\ibu0k{-2}\qbp0k\en    
+  \notes\roff{\zq {dg}\tbbu0\tqh0i}\en
+  \bar
+  \Notes\zhu j\Uptext{C}\zhl {ceg}\en
+  \bar %4
+  \Notes\zqu g\zhl {ec}\en
+  \notes\ibu0j6\qbp0j\en    
+  \notes\roff{\tbbu0\tqh0m}\en
+  \bar % 5
+  \Notes\zqu m\Uptext{F}\zhl {chj}\en
+  \notes\ibu0l{-2}\qbp0l\en    
+  \notes\roff{\tbbu0\tqh0k}\en
+  \bar %7
+  \notes\ibu0j0\zql{cg}\Uptext{C/G}\qb0j\nbbu0\qb0k\tbu0\qb0j\en    
+  \notes\ibu0i1\zql d\Uptext{G$^7$}\qbp0i \en
+  \notes\roff{\tbbu0\tqh0 j}\en
+  \bar
+  \NOtes\zhu k\Uptext{G}\zhl {Ndg}\en
+%  \NOTEs\auxlyr\lyr\zwh i%       The lyrics of the whole notes
+%    \lyr\wh b\en     %       must be given manually.
+ \endpiece
+% \lyrmodenormal0
+\end{music}
+
+
+\section{C major scale}
+\begin{music}
+
+ \generalsignature{0}
+ \advance\stafftopmarg1\Interligne
+ \advance\staffbotmarg2\Interligne
+
+ \startpiece\addspace\afterruleskip
+  \NOtes\zh {ceg}\Uptext{C} \zcharnote{-14}{I} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \NOtes\zh {dfh}\Uptext{Dm} \zcharnote{-14}{ii} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \NOtes\zh {egi}\Uptext{Em} \zcharnote{-14}{iii} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \NOtes\zh {fhj}\Uptext{F} \zcharnote{-14}{IV} \en
+  \NOtes\zh {gik}\Uptext{G} \zcharnote{-14}{V} \en
+  \NOtes\zh {hjl}\Uptext{Am} \zcharnote{-14}{vi} \en
+  \NOtes\zh {ikm}\Uptext{Bdim} \zcharnote{-14}{vii$^\circ$}\en
+  \NOtes\zh {c_eg}\Uptext{Cm} \zcharnote{-14}{i} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+ \endpiece
+\end{music}
+
+\section{D major scale from transpostion of C }
+\begin{music}
+ \transpose=2 % Logical Transposition
+ \generalsignature{2}
+ \advance\stafftopmarg1\Interligne
+ \advance\staffbotmarg2\Interligne
+
+ \startpiece\addspace\afterruleskip
+  \NOtes\zh {ceg}\Uptext{D} \zcharnote{-14}{I} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \NOtes\zh {dfh}\Uptext{Em} \zcharnote{-14}{ii} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \NOtes\zh {egi}\Uptext{F$\sharp$m} \zcharnote{-14}{iii} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \NOtes\zh {fhj}\Uptext{G} \zcharnote{-14}{IV} \en
+  \NOtes\zh {gik}\Uptext{A} \zcharnote{-14}{V} \en
+  \NOtes\zh {hjl}\Uptext{Bm} \zcharnote{-14}{vi} \en
+  \NOtes\zh {ikm}\Uptext{C$\sharp$dim} \zcharnote{-14}{vii$^\circ$}\en
+  \NOtes\zh {c_eg}\Uptext{Dm} \zcharnote{-14}{i} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+ \endpiece
+\end{music}
+
+
+
+\section{A major scale}
+\begin{music}
+
+ \generalsignature{3}
+ \advance\stafftopmarg1\Interligne
+ \advance\staffbotmarg2\Interligne
+
+ \startpiece\addspace\afterruleskip
+  \NOtes\zh {ace}\Uptext{A} \zcharnote{-14}{I} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \NOtes\zh {bdf}\Uptext{Bm} \zcharnote{-14}{ii} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \NOtes\zh {ceg}\Uptext{C$^\sharp$m} \zcharnote{-14}{iii} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \NOtes\zh {dfh}\Uptext{D} \zcharnote{-14}{IV} \en
+  \NOtes\zh {egi}\Uptext{E} \zcharnote{-14}{V} \en
+  \NOtes\zh {fhj}\Uptext{F$^\sharp$m} \zcharnote{-14}{vi} \en
+  \NOtes\zh {ghk}\Uptext{G$^\sharp$dim} \zcharnote{-14}{vii$^\circ$}\en
+ \endpiece
+\end{music}
+
+
+\section{B$^\flat$ major scale}
+\begin{music}
+
+ \generalsignature{-3}
+ \advance\stafftopmarg1\Interligne
+ \advance\staffbotmarg2\Interligne
+
+ \startpiece\addspace\afterruleskip
+  \NOtes\zh {egi}\Uptext{E$^\flat$} \zcharnote{-14}{I} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \NOtes\zh {fhj}\Uptext{Fm} \zcharnote{-14}{ii} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \NOtes\zh {gik}\Uptext{Gm} \zcharnote{-14}{iii} \en  % \Uptext{} =\zchar{14}{}, uptext=10
+  \NOtes\zh {hjl}\Uptext{A$^\flat$} \zcharnote{-14}{IV} \en
+  \NOtes\zh {ikm}\Uptext{B$^\flat$} \zcharnote{-14}{V} \en
+  \NOtes\zh {jln}\Uptext{Cm} \zcharnote{-14}{vi} \en
+  \NOtes\zh {kmo}\Uptext{Ddim} \zcharnote{-14}{vii$^\circ$}\en
+ \endpiece
+\end{music}
+
+
+\medskip\medskip
+\clearpage
+
+\begin{music}
+\hsize130mm
+\tenrm
+\parindent0pt
+\generalmeter{\meterfrac34}
+\generalsignature1
+\startbarno0
+\def\txh{-6.5}
+\def\tx#1*{\zchar\txh{\lrlap{\kern3\Internote#1}}}
+\def\rtx#1*{\zchar\txh{\kern-3\Internote#1}}
+\stafftopmarg10\Interligne
+\raiseguitar{20}
+\nostartrule
+\startpiece
+\addspace{.5\afterruleskip}%
+\NOtes\tx We*\qa d\en
+\bar
+\NOtes\guitar G{}o-----\gbarre3\gdot25\gdot35\gdot44\tx wish*\qa g\en
+\Notes\tx you*\ca g\en
+\Notes\tx a*\ca h\en
+\Notes\zchar\txh{merry}\ca g\en
+\Notes\ca f\en
+\bar
+\NOtes\guitar C5o-----\gbarre4\gdot26\gdot36\gdot45\rtx christmas,*\qa e\en
+\NOtes\qa e\en
+\NOtes\guitar {e/H}5o-----\gbarre3\gdot35\gdot45\gdot54\tx we*\qa e\en
+\bar
+\NOtes\guitar {A$\!^7$}5o-----\gbarre1\gdot23\gdot42\tx wish*\qa h\en
+\Notes\tx you*\ca h\en
+\Notes\tx a*\ca i\en
+\Notes\zchar\txh{merry}\ca h\en
+\Notes\ca g\en
+\bar
+\NOtes\guitar D{}xxo---\gdot42\gdot53\gdot62\rtx christmas,*\qa f\en
+\NOtes\qa d\en
+\zbar
+\NOtes\guitar{D/c}{}xo----\gdot23\gdot42\gdot53\gdot62\tx we*\qa d\en
+\bar
+\NOtes\guitar{B$^7$}{}xo----\gdot22\gdot31\gdot42\gdot62\tx wish*\qa i\en
+\Notes\tx you*\ca i\en
+\Notes\tx a*\ca j\en
+\Notes\tx ~mer-*\ca i\en
+\Notes\tx ry*\ca h\en
+\bar
+\NOtes\guitar e{}xxo---\gdot32\tx ~christ-*\qa g\en
+\NOtes\tx mas*\qa e\en
+\Notes\guitar {G/d}{}xxo---\gdot63\tx and*\ca d\en
+\Notes\tx a*\ca d\en
+\bar
+\NOtes\guitar{C$^6$}{}xo----\gdot23\gdot32\gdot42\gdot51\tx ~~hap~-*\qa e\en
+\NOtes\tx py*\qa h\en
+\NOtes\guitar{D$^7$}{}xo---x\gdot25\gdot34\gdot45\gdot45\gdot53\tx new*\qa f\en
+\bar
+\NOTes\guitar G{}o-----\gbarre3\gdot25\gdot35\gdot44\tx ~year.*\ha g\en
+\setdoublebar\endpiece
+\end{music}
+
+
+\medskip\medskip
+
+\begin{music}
+\parindent0pt
+\def\rqs{\lower\Interligne\rlap\qs}
+\def\snotes{\vnotes1\elemskip}
+\setstaffs1{2}
+\generalsignature{2}
+\setclef1{\bass}
+\interstaff{12}
+\startpiece
+%%% bar 1
+\addspace\afterruleskip
+\snotes|\tinynotesize\ibsluru0n\ibbu0m5\qb0{=m}\tqh0n\en
+\qspace
+\Notes\zchar{-7}\sPed\loffset{.3}{\fl E}\zq E\qu{_I}%
+  |\zql g\ibu2l0\busf2\qb2{=m}\en
+\Notes|\tubslur0o\qb2{_l}\en
+\Notes\loffset{.3}{\fl L}\zq L\ibl0L0\qb0{_b}%\fl is flat \zq is nonspacing
+  |\ibl1h0\zqb1g\bupz2\qb2l\en
+\Notes\zq L\tqb0b|\tbl1\zqb1g\bupz2\tqh2l\en
+\NOtes\zq L\ql b|\zql g\qu l\en
+\notes\zchar{-7}\sPed\zchar{-7}{\eightit ~~~sempre}%
+  \zchar{14}{\pp\eightit~sempre}\zq I\ibbu1J0\qb1L|\qs\en
+\notes\qs|\zq N\ibbu3d0\qb3{_d}\en
+\notes\qb1E|\rqs\en
+\notes\qs|\fl e\zq N\rq e\qb3d\en
+%%% bar 2
+\bar
+\notes\loffset{.3}{\fl I}\zq I\qb1{_L}|\rqs\en
+\qspace
+\notes\qs|\lfl d\zq d\zq {=f}\qb3N\en
+\notes\tqh1{_E}|\rqs\en
+\notes\qs|\zq d\zq g\tqh3N\en
+\notes\zq I\ibbu0J0\qb0L|\rqs\en
+\notes\qs|\zq d\ibbu1d0\qb1N\en
+\notes\qb0E|\rqs\en
+\notes\qs|\fl e\rq e\zq d\qb1N\en
+\notes\zq I\qb0L|\rqs\en
+\notes\qs|\zq f\zq d\qb1N\en
+\notes\tqh0E|\rqs\en
+\notes\qs|\zq g\zq d\tqh1N\en
+\notes\zq I\ibbu0J0\qb0L|\rqs\en
+\notes\qs|\zq d\ibbu1d0\qb1N\en
+\notes\qb0E|\rqs\en
+\notes\rlap\qs\hsk\tbu0|\rq e\zq d\zqb1N\hsk\tbu1\en
+\endpiece
+\end{music}
+\medskip
+
+
+
+
+\section{Guitar Templates}
+
+\subsection{Lyrics with Chords}
+%\begin{framed}
+\begin{song}\noindent
+ You are my \Red\T\ \normalcolor\chord{\Red F\normalcolor}{sunshine}, my only \T\ sunshine.\\
+ You make me \T\ \chord{B\Red\B\normalcolor}{happy} when skies are \T\ \chord{F}{gray}.\\
+ You never \T\ \chord{B\B}{know}, Dear, how much I \T\ \chord{F}{love} you.\\
+ Please don't \T\ take my \chord{C$^7$}{sunshine} a-\T\chord{F}{way}.
+\end{song}
+%\end{framed}
+
+%\newpage
+
+
+\subsection{Classical guitar}
+Das Ergebnis\footnote{aus `A Modern Method for Guitar Volume 1' von William G. Leavitt} sieht so aus:\\
+\generalmeter{\meterfrac44}%
+\parindent 0pt
+\startbarno=1
+\setclefsymbol 1\treblelowoct
+\systemnumbers
+\generalsignature{0}
+\startpiece
+\leftrepeat\barno=1 % 1
+\Notes\Red\lage2p\normalcolor\ibu0c2\Red\Finger2c\saite5M\normalcolor\qb0{cde}\tbu0\qb0f\en
+\Notes\ibu0g1\qb0g\Red\Finger{1~~}g\normalcolor\qb0{^g}\Finger1h\qb0h\tbu0\qb0 i\en
+\bar % 2
+\Notes\ibl0j2\qb0{jkl}\tbl0\Finger1m\qb0 m\en
+\Notes\ibl0n0\Finger2n \qb0{n^no}\tbl0\qb0n\en
+\bar % 3
+\Notes\ibl0n{-2}\cna n\qb0n\Finger1m\qb0m\Finger4l\qb0l\tbl0\qb0k\en
+\Notes\ibl0j{-1}\qb0{jih}\Finger{4~~}h\tbl0\qb0{_h}\en
+\bar % 4
+\Notes\ibu0g{-2}\Finger4g\qb0{gfe}\tbu0\qb0d\en
+\Notes\ibu0c{-1}\qb0{cba}\tbu0\qb0b\en
+\setrightrepeat
+\endpiece
+
+\subsection{Classical guitar with high notes}
+
+\startbarno=35
+\setclefsymbol 1\treblelowoct
+\generalsignature{0}
+\setstaffs1{1}
+\startpiece
+\notes\lage4v\zwh L\ibu0l3\finger4m\qb0{=k}\finger1p\qb0{^n}\tbu0\finger3o\qb0{=m}\en
+\notes\lage7y\ibu0o3\finger1r\qb0p\finger3p\qb0n\tbu0\finger4t\qb0{=r}\en
+\notes\Red\lage[2]{12}z\normalcolor\ibu0r3\finger1r\qb0p\finger2v\qb0{=t}\tbu0\finger4t\qb0r\en
+\notes\lage[4]{16}z\ibu0t3\finger1w\qb0{^u}\finger3v\qb0t\tbu0\finger4y\qb0w\en
+\bar
+\notes\lage[3]{13}z\zwh L\ibu0t{-3}\finger4w\qb0{^u}\finger3t\qb0r\tbu0\finger1v\qb0t\en
+\notes\lage{10}z\ibu0q{-3}\finger3r\qb0p\finger1t\qb0r\tbu0\lage7x\finger3p\qb0{^n}\en
+\notes\ibu0o{-3}\finger1r\qb0p\finger4o\qb0m\tbu0\finger3p\qb0n\en
+\notes\lage6v\ibu0l{-3}\finger2m\qb0k\finger1o\qb0m\tbu0\lage3v\finger2k\qb0i\en
+\endpiece
+
+\subsection{Acoustic guitar with beam}
+	
+\systemnumbers
+\generalmeter{\meterC}
+\generalsignature{0}
+\setstaffs1{1}
+\startbarno=3
+\setclefsymbol 1\treblelowoct
+\startpiece
+\notes{\Red\barree M{24}{5.75}1}\zhl M\ibu0f8\Finger3f\qb0f\Finger2h\qb0h\tbu0\qb0j\en
+\notes\ibu0f8\qb0f\qb0h\tbu0\qb0j\en
+\notes\barree d{19}{5.75}3\finger3N\zhl d\ibu0f8\qb0f\qb0{_i}\tbu0\qb0k\en
+\notes\ibu0f8\qb0f\qb0{_i}\tbu0\qb0k\en
+\bar% Takt 4
+\notes\Finger0L\zwh L\ibu0e8\Finger2e\qb0e\finger1d\qb0{^g}\tbu0\Finger4k\qb0k\en
+\notes\ibu0e8\qb0e\Finger3h\qb0h\tbu0\Finger1j\qb0j\en
+\notes\zwh L\ibu0e8\qb0e\qb0h\tbu0\finger0f\qb0{=i}\en
+\notes\ibu0d8\Finger0d\qb0d\Finger1g\qb0g\tbu0\qb0i\en
+\endpiece
+
+\subsection{Rhythem Guitar}
+
+
+\generalmeter\meterC
+\nobarnumbers
+\smallmusicsize
+\def\quart{\roql i}
+\startextract % 1
+\Notes\lage3x\Uptext{Cm$^7$}\Red\strike\normalcolor\en
+\Notes\strike\en
+\Notes\strike\en
+\Notes\strike\en
+\bar % 2
+\notes\lage5x\Uptext{Dm$^{7\B5}$}\Red\strk\normalcolor\en
+\notes\strk\en
+\notes\strk\en
+\notes\strk\en
+\bar % 3
+\notes\lage4x\en
+\notes\Uptext{G$^{7\B9}$}\Red\release\pickd\normalcolor\quart\en
+\notes\release\pickd\quart\en
+\notes\zcharnote M{sim.}\pickd\quart\en
+\notes\pickd\quart\en
+\bar % 4
+\notes\lage3x\en
+\notes\Uptext{Cm$^7$}\ibl0i0\pickd\roqb0 i\Red\picku\normalcolor\tbl0\roqb0 i\en
+\notes\pickd\quart\en
+\notes\pickd\quart\en
+\notes\qp\en
+\endextract
+\normalmusicsize
+
+
+\subsection{Guitar with Finger placements}
+\generalmeter{\meterfrac34}
+\setclefsymbol 1\treblelowoct
+\setsign13
+\startpiece
+\leftrepeat\barno=1 % 1
+\notes\lage2r\en
+\notes\ibu0a9\pickd\finger4L\qb0a\pickd\qb0c\pickd\qb0e\Red\pickd[p]\normalcolor\qb0h\pickd[r]\qb0j\Red\picku[t]\normalcolor\tbu0\qb0 l\en
+\bar % 2
+\notes\ibu0l{-9}\pickd[t]\qb0m\picku[s]\qb0{kifd}\tbu0\qb0 b\en
+\bar % 3
+\notes\ibl0f7\pickd\qb0e\picku\finger{4s}i\qb0g\pickd\qb0i\pickd\qb0k\picku\qb0l\pickd[p]\tbl0\qb0n\en
+\bar % 4
+\notes\ibu0n{-9}\pickd[v]\qb0o\picku[u]\qb0l\qb0{jhe}\tbu0\qb0c\en
+\bar % 5
+\notes\ibu0a8\pickd\qb0a\pickd\qb0d\pickd\qb0f\pickd[p]\qb0h\pickd[r]\qb0k\pickd[t]\tbu0\qb0m\en
+\bar % 6
+\notes\ibu0a8\pickd\qb0a\pickd\qb0c\pickd\qb0e\pickd[p]\qb0h\pickd[r]\qb0j\picku[t]\tbu0\qb0l\en
+\bar % 7
+\notes\ibu0j{-6}\pickd[r]\qb0k\picku[q]\qb0{iged}\tbu0\qb0b\en
+\rightrepeat % 8
+\Notes\zcharnote e{\qp}\hlp a\en
+\notes\zh c\zh e\zhu h\en
+\Endpiece
+
+
+\subsection{Lead guitar}
+
+\begin{music}
+\hsize130mm
+\tenrm
+\parindent0pt
+\generalmeter{\meterfrac44}
+\setsign{1}{-3}
+\nobarnumbers
+\def\txh{-6.5}
+\def\tx#1*{\zchar\txh{\lrlap{\kern3\Internote#1}}}
+\def\rtx#1*{\zchar\txh{\kern-3\Internote#1}}
+\stafftopmarg10\Interligne
+\raiseguitar{20}
+\nostartrule
+\def\quart{\zcharnote{a}{\roql d}}
+\def\eight{\zcharnote{a}{\rocl d}}
+\def\eighx{\zcharnote{a}{\xcl d}}
+\startpiece
+\addspace{.5\afterruleskip}%
+\notes\uptext{Bossa}\en
+\NOtes\qa g\en
+\doublebar % 1
+\NOtes\Red\guitar {Cm$^7$}{2}x-----\gbarre1\gdot33\gdot52\normalcolor{\tinynotesize\Red\pickd[a]\quart\normalcolor}\qlp n\en
+\notes{\tinynotesize\pickd[a]\Red\release[N]\normalcolor\eight}\en
+\Notes{\tinynotesize\picku[a]\eight}\ca m{\tinynotesize\pickd[a]\eight}\ca l\en
+\Notes{\tinynotesize\picku[a]\release[N]\quart}\qa k\en
+\Notes{\tinynotesize\picku[a]\Red\eighx\normalcolor}\isluru0j\ca j\en
+\bar % 2
+\NOtes\zcharnote{M}{sim.}\tslur0j\hlp j\en
+\NOtes\qa i\en
+\bar % 3
+\NOTes\guitar {Fm$^7$}{2}x----x\gdot24\gdot34\gdot43\gdot54\ha h\en
+\Notes\qlp n\en
+\Notes\isluru0m\ca m\en
+\bar % 4
+\NOTEs\tslur0m\wh m\en
+\bar % 5
+\NOtes\guitar {Dm$^{7\Red\B\normalcolor5}$}{2}x----x\gdot23\gdot34\gdot43\gdot54\qlp m\en
+\Notes\ca{lk}\qa j\en
+\Notes\isluru0i\ca i\en
+\bar % 6
+\NOTEs\guitar {G$^{7\B9}$}{2}x----x\gdot23\gdot34\gdot42\gdot54\tslur0i\hlp i\en
+\Notes\qa h\en
+\bar % 7
+\NOTes\guitar {Cm$^7$}{2}x-----\gbarre1\gdot33\gdot52\ha g\en
+\Notes\qlp m\isluru0l\ca l\en
+\bar % 8
+\NOTEs\tslur0l\wh l\en
+\endpiece
+\end{music}
+
